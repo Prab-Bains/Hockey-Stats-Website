@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('/fonts/comfortaa-variablefont_wght-webfont.eot');
+    src: url('/fonts/comfortaa-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.woff') format('woff'),
+         url('/fonts/comfortaa-variablefont_wght-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "comfortaaregular";
+  font-size: 12pt;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: black;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+tr, td, th{
+  border: 1px solid rgb(1, 253, 178);
+}
+
+
+#content {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 5% 22% 68% 5%;
+}
+
+.title_text {
+  color: rgb(1, 253, 178);;
+  font-size: 1.2em;
+}
+
+.body_section {
+  padding: 0.5em;
+}
+
+
+#banner{
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  filter: grayscale(70%);
+  background: url("https://cdn.wallpapersafari.com/91/80/VSBNlt.jpg") center/cover;
+  text-align: center;
+}
+
+#footer{
+  text-align: center;
+  grid-column: 1 / span 3;
+  grid-row: 4 / span 1;
+}
+
+#profile_name{
+  text-align: center;
+  font-size: 300%;
+  font-family: "fantasy";
+}
+
+#middle{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 45% 23%;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  padding-bottom: 5%;
+}
+
+#left_column {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#middle_column {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#right_column {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  overflow: visible;
+  margin: 10px;
+}
+
+.navbar {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 40% 20% 40%;
+  background-color: rgb(29, 27, 27);
+}
+
+a {
+  color: white;
+}
+
+
+input[type='submit'] {
+  font-size: 1.2em;
+  background-color: rgb(1, 253, 178);
+  border: 3px solid rgb(29, 27, 27);
+  color: black;
+  transform: translate3D(0, 0, 0);
+  transition: color 0.3s, background-color 0.3s, transform 0.15s;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  color: white;
+  font-size: 1.2em;
+  background-color: red;
+  outline: none;
+}
+
+.navbar nav {
+  display: table;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  background-color: rgb(29, 27, 27);
+  box-shadow: 0 0 25px rgb(29, 27, 27), 0 5px 10px -3px rgb(29, 27, 27);
+  border-radius: 1em;
+  backdrop-filter: blur(6px);
+  padding: 1.2em;
+}
+
+.navbar ul {
+  display: table-row;
+}
+
+.navbar li {
+  display: table-cell;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 500px) {
+  body{
+    font-size: 10pt;
+  }
+
+}
+
+

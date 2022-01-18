@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hockey Scores</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Generate favicons using: https://favicon.io/ -->
+  <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  <div id="content">
+    <div class="navbar">
+      <!-- <div id="profile_name">NAME</div> -->
+      <nav>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Standings</a></li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <form action="/logout" method="get">
+              <input type="submit" value="Logout" />
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="banner">
+      <br><br><br><br><br><br>
+      <div id="profile_name">NAME</div>
+      <h2>Here's What You Have Missed</h2>
+      <br><br><br><br><br>
+    </div>
+
+    <div id="middle">
+      <div id="left_column" class="body_section">
+        <p class="title_text">Personal Info</p>
+        <table>
+          <tr>
+            <th>Name</th>
+            <td id="name">name</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td id="email">EMAIL</td>
+          </tr>
+          <tr>
+            <th>Phone Number</th>
+            <td id="phone_number">6041234567</td>
+          </tr>
+          <tr>
+            <th>School</th>
+            <td id="school">BCIT</td>
+          </tr>
+          <tr>
+            <th>City</th>
+            <td id="city">Vancouver</td>
+          </tr>
+          <tr>
+            <th>Postal Code</th>
+            <td id="postal_code">A1B 2D3</td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="middle_column" class="body_section">
+        <p id="middle_title" class="title_text">Today's Games</p>
+        <div id="insert-here"></div>
+
+      </div>
+      <div id="right_column" class="body_section">
+        <p class="title_text">Upcoming Games</p>
+        <table>
+          <tr>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Location</th>
+            <th>Time</th>
+
+          </tr>
+          <tr>
+            <td>Detroit</td>
+            <td>Vancouver</td>
+            <td>Little Ceasars Arena</td>
+            <td>December 1 @ 11:00</td>
+          </tr>
+          <tr>
+            <td>Montreal</td>
+            <td>Ottawa</td>
+            <td>Bell Center</td>
+            <td>December 1 @ 12:00</td>
+          </tr>
+          <tr>
+            <td>Chicago</td>
+            <td>Seattle</td>
+            <td>United Center</td>
+            <td>December 1 @ 14:00</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p>	&copy; Hockey Night in Canada</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
